@@ -4,7 +4,7 @@
 def create_acc():
     name = input('Enter your name :')
     balance = float(input('Enter initial balance :'))
-    print('Account created Sucessfully fror {name} with {balance} initial balance')
+    print(f'Account created successfully for {name} with ₹{balance:.2f} initial balance')
     return {'name': name,'balance':balance }
 
 # Debit

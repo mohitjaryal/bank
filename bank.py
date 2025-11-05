@@ -28,3 +28,8 @@ def credit(account):
 def check_balance(account):
      print(f"Account Holder: {account['name']}")
      print(f"Current Balance: ₹{account['balance']:.2f}")
+
+# main function
+def main():
+    print("🏦 Welcome to Simple Bank 🏦")
+    account = create_acc() 

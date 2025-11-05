@@ -31,7 +31,7 @@ def check_balance(account):
 
 # main function
 def main():
-    print("🏦 Welcome to Simple Bank 🏦")
+    print("🏦 Welcome to Simple Bank")
     account = create_acc() 
 
     while True:

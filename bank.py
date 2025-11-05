@@ -14,4 +14,6 @@ def debit():
     print(f"₹{amount:.2f} deposited successfully!")
     print(f"New Balance: ₹{account['balance']:.2f}")
 
-# Cre
+# Credit
+def credit():
+    amount = float(input('Enter amount to withdraw :'))

@@ -8,12 +8,23 @@ def create_acc():
     return {'name': name,'balance':balance }
 
 # Debit
-def debit():
+def debit(account):
     amount = float(input('Enter amount to deposit :'))
-    amount['balance'] += amount
+    account['balance'] += amount
     print(f"₹{amount:.2f} deposited successfully!")
     print(f"New Balance: ₹{account['balance']:.2f}")
 
 # Credit
-def credit():
+def credit(account):
     amount = float(input('Enter amount to withdraw :'))
+    if(account>amount['balance']):
+        print('Insufficient balance!')
+    else:
+        account['balance'] -= amount
+        print(f"₹{amount:.2f} withdrawn successfully!")
+        print(f"Remaining Balance: ₹{account['balance']:.2f}")
+
+# Check balance
+def check_balance(account):
+     print(f"Account Holder: {account['name']}")
+     print(f"Current Balance: ₹{account['balance']:.2f}")

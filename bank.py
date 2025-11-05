@@ -3,7 +3,7 @@
 # Create Account
 def create_acc():
     name = input('Enter your name :')
-    balance = float('Enter initial balance :')
+    balance = float(input('Enter initial balance :'))
     print('Account created Sucessfully fror {name} with {balance} initial balance')
     return {'name': name,'balance':balance }
 
@@ -17,7 +17,7 @@ def debit(account):
 # Credit
 def credit(account):
     amount = float(input('Enter amount to withdraw :'))
-    if(account>amount['balance']):
+    if(amount>account['balance']):
         print('Insufficient balance!')
     else:
         account['balance'] -= amount
@@ -44,17 +44,17 @@ def main():
         choice = input('Enter choice (1-4)')
 
         # if
-        if(choice==1):
+        if(choice=='1'):
             debit(account)
-        elif(choice==2):
-            create_acc(account)
-        elif(choice==3):
+        elif(choice=='2'):
+            credit(account)
+        elif(choice=='3'):
             check_balance(account)
-        elif(choice==4):
+        elif(choice=='4'):
             print('Thanks fro using 🏦')
             break
         else:
             print('Error, Try again')
 
-if __name__ == 'main':
+if __name__ == '__main__':
     main()

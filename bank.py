@@ -39,4 +39,19 @@ def main():
         print('1. Debit')
         print('2. Credit')
         print('3. Check balance')
-        print('1. Exit')
+        print('4. Exit')
+
+        choice = input('Enter choice (1-4)')
+
+        # if
+        if(choice==1):
+            debit(account)
+        elif(choice==2):
+            create_acc(account)
+        elif(choice==3):
+            check_balance(account)
+        elif(choice==4):
+            print('Thanks fro using 🏦')
+            break
+        else:
+            print('Error, try again')

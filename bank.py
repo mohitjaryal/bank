@@ -36,4 +36,6 @@ def main():
 
     while True:
         print('\n===Menu===')
-        print('\n===Menu===')
+        print('1. Debit')
+        print('1. Credit')
+        print('1. Deposit')

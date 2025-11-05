@@ -54,4 +54,7 @@ def main():
             print('Thanks fro using 🏦')
             break
         else:
-            print('Error, try again')
+            print('Error, Try again')
+
+if __name__ == 'main':
+    main()
